@@ -25,6 +25,21 @@ ul {
   list-style-type: none;
 }
 
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: Oswald;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+  letter-spacing: 0.0563rem;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
 body {
   /* Ensure the body takes up at least the full viewport height */
   min-height: 100vh;
@@ -97,7 +112,7 @@ body {
   font-size: 0.875rem;
   font-weight: 700;
   line-height: 1.25rem;
-  letter-spacing: 0.7px;
+  letter-spacing: 0.0437rem;
   text-transform: uppercase;
   border: 2px solid #111;
   padding: 0.5rem 1.5rem;
@@ -121,10 +136,128 @@ body {
 .utility-bar p {
   color: #f4f4f4;
   font-family: Inter;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 16px; /* 133.333% */
-  letter-spacing: 1.2px;
+  line-height: 1rem; /* 133.333% */
+  letter-spacing: 0.075rem;
   text-transform: uppercase;
+}
+
+/* ========================================
+ HERO SECTION
+ ======================================== */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 10.75rem 1.5rem 4rem;
+  background:
+    linear-gradient(
+      0deg,
+      #111 0%,
+      rgba(17, 17, 17, 0.4) 50%,
+      rgba(17, 17, 17, 0) 100%
+    ),
+    url("./assets/images/hero.avif") center / cover no-repeat;
+}
+
+/* ===== HERO - CONTENT ===== */
+
+.hero__content {
+  max-width: 756px;
+}
+
+.hero__title {
+  color: #f4f4f4;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: Oswald;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 6rem;
+  letter-spacing: -0.3rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.hero__title span {
+  color: #fdb913;
+}
+
+.hero__description {
+  color: rgba(244, 244, 244, 0.9);
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+.hero__description span {
+  display: block;
+}
+
+/* ===== HERO - BTNS ===== */
+
+.hero__actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn--primary {
+  color: #111;
+  background-color: #fdb913;
+  border: 2px solid #fdb913;
+}
+
+.btn--primary:hover {
+  background-color: #f4f4f4;
+  border-color: #f4f4f4;
+}
+
+.btn--secondary {
+  color: #f4f4f4;
+  background-color: #111;
+  border: 2px solid #f4f4f4;
+}
+
+.btn--secondary:hover {
+  background-color: #f4f4f4;
+  color: #111;
+}
+
+/* ===== HERO - STATS ===== */
+.hero__stats {
+  display: flex;
+  gap: 2rem;
+  align-self: end;
+  width: 288px;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid #1a1a1a;
+  background: rgba(17, 17, 17, 0.8);
+  backdrop-filter: blur(6px);
+}
+
+.hero__stats dt {
+  color: #fdb913;
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25rem;
+  letter-spacing: 0.0437rem;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.hero__stats dd {
+  color: #f4f4f4;
+  font-family: Oswald;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
 }
