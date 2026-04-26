@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,6 +17,14 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
 body {
   /* Ensure the body takes up at least the full viewport height */
   min-height: 100vh;
@@ -23,4 +33,98 @@ body {
   /* Normalize line height for better readability */
   line-height: 1.5;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ========================================
+ SITE HEADER
+ ======================================== */
+
+/* ===== SITE HEADER ===== */
+.site-header {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.site-header .header__top-row {
+  display: flex;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 1rem 1.5rem;
+}
+
+/* ===== HEADER LOGO ===== */
+.header__logo a {
+  color: #111;
+  font-family: Oswald;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.25rem; /* 120% */
+  letter-spacing: -0.0469rem;
+  margin-right: 2rem;
+}
+
+/* ===== NAV LINKS ===== */
+.header__nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: #111;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25rem;
+  letter-spacing: 0.0437rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #fdb913;
+}
+
+/* ===== NAV BTN ===== */
+
+.cta-btn__header {
+  color: #111;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  border: 2px solid #111;
+  padding: 0.5rem 1.5rem;
+  margin-left: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-btn__header:hover {
+  color: #f4f4f4;
+  background-color: #111;
+}
+
+/* ===== HEADER - ASIDE ===== */
+.utility-bar {
+  background: #111;
+  color: #f4f4f4;
+  text-align: center;
+  padding: 0.5rem 1.5rem;
+}
+
+.utility-bar p {
+  color: #f4f4f4;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px; /* 133.333% */
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
 }
