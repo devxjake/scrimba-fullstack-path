@@ -299,4 +299,9 @@ body {
   line-height: 1.5rem;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.historic-header__link:hover {
+  color: #fdb913;
 }
