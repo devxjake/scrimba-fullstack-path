@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  /* Ensure the body takes up at least the full viewport height */
+  min-height: 100vh;
+  /* Improve font rendering on macOS/iOS */
+  -webkit-font-smoothing: antialiased;
+  /* Normalize line height for better readability */
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+}
