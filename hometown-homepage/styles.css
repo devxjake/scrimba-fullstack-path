@@ -159,7 +159,7 @@ body {
       rgba(17, 17, 17, 0.4) 50%,
       rgba(17, 17, 17, 0) 100%
     ),
-    url("./assets/images/hero.avif") center / cover no-repeat;
+    url("./assets/images/hero.png") center / cover no-repeat;
 }
 
 /* ===== HERO - CONTENT ===== */
