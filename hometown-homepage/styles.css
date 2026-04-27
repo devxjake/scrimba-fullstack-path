@@ -323,6 +323,7 @@ body {
   min-width: 300px; /* Prevents cards from getting too squashed on small screens */
   height: 320px; /* Requested height */
   cursor: pointer;
+  transition: all 0.4s ease-in-out;
 }
 
 .heritage-card__figure {
@@ -347,6 +348,10 @@ body {
   transition:
     transform 0.4s ease-in-out,
     filter 0.4s ease-in-out;
+}
+
+.heritage-card:hover {
+  transform: translateY(-4px);
 }
 
 .heritage-card:hover .heritage-card__image {
